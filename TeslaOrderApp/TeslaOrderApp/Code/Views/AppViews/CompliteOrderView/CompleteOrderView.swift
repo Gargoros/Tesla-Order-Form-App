@@ -11,7 +11,14 @@ struct CompleteOrderView: View {
     @EnvironmentObject var order: OrderViewModel
     
     var body: some View {
-        Text("Complete Order View")
+        VStack {
+            TopOrderView()
+                .padding(.top, 20)
+            BottomOrderView()
+        }
+        .background(Color.white)
+        .ignoresSafeArea()
+        
     }
 }
 

@@ -9,7 +9,25 @@ import SwiftUI
 
 struct CarDetailsView: View {
     var body: some View {
-        Text("Car Detail View")
+        ZStack {
+            RoundedRectangle(cornerRadius: 20)
+                .fill(Color.baseGray)
+                .frame(height: 442)
+            VStack(spacing: 10){
+                VStack{
+                    Image("tesla-logo")
+                        .offset(y: 120)
+                    Image("tesla-s")
+                    Image("tesla-text-logo")
+                        .offset(y: -10)
+                }
+                CarInfoView()
+            }
+            .offset(y: -155)
+        }
+        .padding(.horizontal, 12)
+        .offset(y: 100)
+        .frame(height: 250)
     }
 }
 
