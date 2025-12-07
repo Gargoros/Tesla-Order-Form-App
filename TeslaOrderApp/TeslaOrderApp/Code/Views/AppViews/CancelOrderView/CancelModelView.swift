@@ -12,7 +12,8 @@ struct CancelModelView: View {
     
     var body: some View {
         VStack {
-            
+            header
+            buttons
         }
         .padding(.horizontal, 10)
         .frame(minWidth: 0, maxWidth: .infinity)
